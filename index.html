@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+<div class="row justify-content-center mt-3">
+<div class="col-10">
+<div class="card text">
+
+    <div class="card-header">
+        <h5 class="card-title">Paiment Form</h5>
+    </div>
+
+    <form class="needs-validation" novalidate>
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                Some fiels are missing
+            </div>
+        
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label for="validationTooltip03">Card Number</label>
+                        <input type="text" class="form-control" maxlength="16" pattern="\d{4}" id="validationTooltip03" placeholder="Valid Card Number" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid Card Number.
+                </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip04">Card CVV</label>
+                    <input type="text" class="form-control" maxlength="3" pattern="\d{3} id="validationTooltip03" placeholder="123" required>
+                    <div class="invalid-tooltip">
+                    Please provide a valid Card CVV.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip05">Amount €</label>
+                    <input type="number" class="form-control" id="validationTooltip05" placeholder="€" pattern="^\d*(\.\d{0,2})?$" required>
+                    <div class="invalid-tooltip">
+                    Please provide a valid Amount.
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip01">First name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Lorella" required>
+                        <div class="valid-tooltip">
+                        Looks good!
+                        </div>
+                </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="validationTooltip02">Last name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Mantovani" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip03">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Alcorcón" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip04">State</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Madrid" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid State.
+                        </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip05">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="28923" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">
+                    <label>We accept:</label>        
+                    <div class="card text-white bg-secondary mb-3">
+                        <div class="cardbody">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><h2><i class="fab fa-cc-mastercard"></i></h2></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2"><h2><i class="fab fa-cc-visa"></i></h2></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><h2><i class="fab fa-cc-amex"></i></h2></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2"><h2><i class="fab fa-cc-apple-pay"></h2></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="form-group col-6 offset-2">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <h7>Add any notes here</h7>
+                </div>
+                
+            </div>
+
+            
+        </div>
+            
+        <div class="card-footer text-muted">
+            <div class="col-3 offset-9">
+                <button class="btn btn-dark" type="submit">Cancel</button>
+                <button class="btn btn-primary" type="submit">Send Form</button>
+            </div>
+        </div>
+        
+        
+    </form>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
